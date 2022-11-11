@@ -706,5 +706,46 @@ header nav .form i {
   right: -8px;
   top: -15px;
 }
-
 /* End Skills */
+/* Start qoute */
+.qoute {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url("../images/quote.jpg");
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.qoute::before {
+  content: "";
+  position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 75%);
+}
+.qoute .container {
+  position: relative;
+  display: block;
+}
+.qoute .container span {
+  position: absolute;
+  font-size: small;
+  padding-left: 18px;
+  padding-top: 10px;
+}
+.qoute .container i {
+  position: absolute;
+  padding-top: 10px;
+  padding-left: -6px;
+  bottom: 5px;
+}
+@media (max-width: 992px) {
+  .qoute .container i:first-child {
+    position: absolute;
+    top: -14px;
+  }
+}
+/* End qoute */
