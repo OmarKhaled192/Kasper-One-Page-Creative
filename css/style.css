@@ -800,33 +800,33 @@ header nav .form i {
   position: relative;
 }
 .pricing .plans .plan ul li:not(:last-child)::after {
-  content: '';
+  content: "";
   width: 120px;
   height: 1px;
   background-color: var(--main-color);
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  bottom: 0; 
+  bottom: 0;
 }
 .pricing .plans .plan .foot a {
-    display: block;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: 1px solid var(--main-color);
-    border-radius: 10%;
-    color: var(--main-color);
-    width: fit-content;
-    margin: 30px auto;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid var(--main-color);
+  border-radius: 10%;
+  color: var(--main-color);
+  width: fit-content;
+  margin: 30px auto;
 }
 .pricing .plans .plan .foot a:hover {
   background-color: var(--main-color);
   color: white;
 }
 .pricing .contact-text {
-    text-align: center;
-    margin: 50px auto 20px;
-    font-size: 20px;
+  text-align: center;
+  margin: 50px auto 20px;
+  font-size: 20px;
 }
 .pricing .contact-link {
   display: block;
@@ -845,3 +845,78 @@ header nav .form i {
   color: white;
 }
 /* End Pricing */
+/* Start Subscribe */
+.subscribe {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-image: url(../images/subscribe.jpg);
+  background-color: cover;
+  position: relative;
+  color: white;
+}
+.subscribe::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 50%);
+}
+.subscribe .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .subscribe .container {
+    flex-direction: column;
+  }
+}
+.subscribe form {
+  display: flex;
+  position: relative;
+  width: 500px;
+  max-width: 100%;
+}
+.subscribe form i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+}
+.subscribe form input[type="email"] {
+  border: 1px solid white;
+  border-right: none;
+  background: none;
+  color: white;
+  padding: 20px 20px 20px 60px;
+  caret-color: var(--main-color);
+  width: calc(100% -130px);
+}
+.subscribe form input[type="submit"] {
+  width: 130px;
+  background-color: var(--main-color);
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-left: none;
+  text-transform: uppercase;
+}
+.subscribe form input[type="email"],
+.subscribe form input[type="submit"] {
+  outline: none;
+}
+.subscribe form ::placeholder {
+  color: white;
+}
+.subscribe p {
+  line-height: 2;
+  margin-left: 50px;
+}
+@media (max-width: 991px) {
+  .subscribe p {
+    margin: 30px 0 0;
+  }
+}
+/* End Subscribe  */
