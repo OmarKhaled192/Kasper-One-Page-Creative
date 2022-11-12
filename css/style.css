@@ -880,10 +880,10 @@ header nav .form i {
   max-width: 100%;
 }
 .subscribe form i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 25px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 25px;
 }
 .subscribe form input[type="email"] {
   border: 1px solid white;
@@ -892,13 +892,14 @@ header nav .form i {
   color: white;
   padding: 20px 20px 20px 60px;
   caret-color: var(--main-color);
-  width: calc(100% -130px);
+  width: calc(100% - 130px);
 }
 .subscribe form input[type="submit"] {
   width: 130px;
   background-color: var(--main-color);
   color: white;
   padding: 10px 20px;
+  cursor: pointer;
   border: 1px solid white;
   border-left: none;
   text-transform: uppercase;
@@ -920,3 +921,89 @@ header nav .form i {
   }
 }
 /* End Subscribe  */
+/* Start Contact  */
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.contact .content {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .contact .content {
+    flex-direction: column;
+  }
+}
+.contact .content form {
+  flex-basis: 70%;
+}
+
+.contact .content form .main-input {
+  padding: 20px;
+  display: block;
+  border: 1px solid var(--main-color);
+  margin-bottom: 30px;
+  width: 100%;
+  border-radius: 5%;
+}
+.contact .content form .main-input:focus {
+  outline: none;
+}
+.contact .content form textarea.main-input {
+  height: 200px;
+}
+.contact .content form input[type="submit"] {
+  color: var(--main-color);
+  padding: 20px;
+  border: none;
+  border-radius: 10%;
+  outline-style: solid;
+  outline-color: var(--main-color);
+  text-transform: uppercase;
+  display: flex;
+  margin-left: auto;
+  cursor: pointer;
+}
+.contact .content form input[type="submit"]:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+.contact .content .info {
+  flex-basis: 25%;
+}
+@media (max-width: 767px) {
+  .contact .content .info {
+    order: -1;
+    text-align: center;
+  }
+}
+.contact .content .info h4 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.contact .content .info .phone {
+  display: block;
+  color: #777;
+  margin-bottom: 10px;
+}
+.contact .content .info h4:nth-of-type(2) {
+  margin-top: 100px;
+}
+@media (max-width: 767px) {
+  .contact .content .info h4:nth-of-type(2) {
+    margin-top: 30px;
+  }
+}
+.contact .content .info address {
+  color: #777;
+  line-height: 2;
+}
+@media (max-width: 767px) {
+  .contact .content .info address {
+    margin-bottom: 40px;
+  }
+}
+/* End Contact  */
