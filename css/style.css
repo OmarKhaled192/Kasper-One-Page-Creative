@@ -614,7 +614,7 @@ header nav .form i {
   text-align: center;
   margin-bottom: 60px;
 }
-  /* testimonial Section */
+/* testimonial Section */
 .our-skills .testimonials .content {
   display: flex;
   align-items: center;
@@ -627,14 +627,13 @@ header nav .form i {
   margin-right: 50px;
 }
 @media (max-width: 767px) {
-
   .our-skills .testimonials .content {
     flex-direction: column;
     text-align: center;
   }
   .our-skills .testimonials .content img {
     margin: 0 auto 20px;
-  } 
+  }
 }
 
 .our-skills .testimonials .text {
@@ -646,9 +645,9 @@ header nav .form i {
   text-align: right;
   font-size: 14px;
   margin-bottom: 10px;
-} 
+}
 
-  /* Bulltets Style  */
+/* Bulltets Style  */
 .our-skills .testimonials .bullets {
   display: flex;
   justify-content: center;
@@ -666,7 +665,7 @@ header nav .form i {
   background-color: var(--main-color);
   border-color: var(--main-color);
 }
-  /* Progress Section */
+/* Progress Section */
 .our-skills .skills .prog-holder {
   margin-bottom: 40px;
 }
@@ -679,7 +678,7 @@ header nav .form i {
   background-color: #dedadc;
   height: 30px;
 }
-.our-skills .skills .prog-holder .prog span { 
+.our-skills .skills .prog-holder .prog span {
   display: block;
   background-color: var(--main-color);
   height: 100%;
@@ -697,8 +696,8 @@ header nav .form i {
   text-align: center;
   border-radius: 4px;
 }
-.our-skills .skills .prog-holder .prog span::after { 
-  content: '';
+.our-skills .skills .prog-holder .prog span::after {
+  content: "";
   position: absolute;
   border-style: solid;
   border-width: 8px;
@@ -720,11 +719,11 @@ header nav .form i {
 .qoute::before {
   content: "";
   position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0 0 0 / 75%);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 75%);
 }
 .qoute .container {
   position: relative;
@@ -748,4 +747,101 @@ header nav .form i {
     top: -14px;
   }
 }
+
 /* End qoute */
+/* Start Pricing */
+.pricing {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.pricing .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.pricing .plans .plan {
+  background-color: #fcfcfc;
+  text-align: center;
+}
+.pricing .plans .plan .head {
+  padding: 40px 20px;
+  border-top: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan .head h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.pricing .plans .plan .head span {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.pricing .plans .plan .head span:before {
+  content: "$";
+  font-size: 25px;
+  position: relative;
+  top: -40px;
+  margin-right: 15px;
+  font-weight: normal;
+}
+.pricing .plans .plan .head span:after {
+  content: "/Mo";
+  font-size: 20px;
+  position: relative;
+  right: -15px;
+}
+.pricing .plans .plan ul {
+  border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan ul li {
+  padding: 20px;
+  position: relative;
+}
+.pricing .plans .plan ul li:not(:last-child)::after {
+  content: '';
+  width: 120px;
+  height: 1px;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0; 
+}
+.pricing .plans .plan .foot a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 1px solid var(--main-color);
+    border-radius: 10%;
+    color: var(--main-color);
+    width: fit-content;
+    margin: 30px auto;
+}
+.pricing .plans .plan .foot a:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+.pricing .contact-text {
+    text-align: center;
+    margin: 50px auto 20px;
+    font-size: 20px;
+}
+.pricing .contact-link {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  outline-style: solid;
+  outline-offset: 1px;
+  border-radius: 10%;
+  outline-color: var(--main-color);
+  color: var(--main-color);
+  padding: 15px 30px;
+  text-decoration: none;
+}
+.pricing .contact-link:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+/* End Pricing */
