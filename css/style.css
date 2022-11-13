@@ -728,26 +728,17 @@ header nav .form i {
 .qoute .container {
   position: relative;
   display: block;
+  line-height: 2;
 }
 .qoute .container span {
   position: absolute;
   font-size: small;
   padding-left: 18px;
-  padding-top: 10px;
+  padding-top: 18px;
 }
 .qoute .container i {
   position: absolute;
-  padding-top: 10px;
-  padding-left: -6px;
-  bottom: 5px;
 }
-@media (max-width: 992px) {
-  .qoute .container i:first-child {
-    position: absolute;
-    top: -14px;
-  }
-}
-
 /* End qoute */
 /* Start Pricing */
 .pricing {
